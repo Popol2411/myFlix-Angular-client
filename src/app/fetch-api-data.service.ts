@@ -201,7 +201,7 @@ getFavoriteMovies(): Observable<any> {
 
  /**
   * calls API end-point to remove current user from the database
-  * @returns delet status
+  * @returns delete status
   */
   deleteUserProfile(): Observable<any> {
     const token = localStorage.getItem('token');
