@@ -20,11 +20,13 @@ export class FetchApiDataService {
   // Inject HttpClient module to constructor params
   constructor(private http: HttpClient) { }
 
-  /**
-   * calls API endpoint to register a new user
-   * @param userDetails 
-   * @returns a new user object in JSON format
-   */
+ 
+ /**
+ * Making the api call for the user registration endpoint
+ * @param userDetails {any}
+ * @returns a new user object
+ */
+
   public userRegistration(userDetails: any): Observable<any> {
     console.log(userDetails);
     return this.http
@@ -35,10 +37,11 @@ export class FetchApiDataService {
   }
 
   /**
-   * calls API endpoint to login an existing user
-   * @param userDetails 
-   * @returns data of the user in JSON format
-   */
+ * calls API endpoint to user login
+ * @param userDetails {any}
+ * @returns a new user object
+ */
+
   public userLogin(userDetails: any): Observable<any> {
     return this.http
       .post(apiUrl + 'login', userDetails)
@@ -89,7 +92,7 @@ export class FetchApiDataService {
    */
   getDirector(name: any): Observable<any> {
     return this.http
-      .get(apiUrl + `movies/director/${name}`, {
+      .get(apiUrl + `/director/${name}`, {
         headers: new HttpHeaders({
           Authorization: 'Bearer ' + token,
         })
@@ -107,7 +110,7 @@ export class FetchApiDataService {
    */
   getGenre(name: any): Observable<any> {
     return this.http
-      .get(apiUrl + `movies/genre/${name}`, {
+      .get(apiUrl + `/genre/${name}`, {
         headers: new HttpHeaders({
           Authorization: 'Bearer ' + token,
         })
