@@ -3,24 +3,3 @@ $cardColor: #fff;
 $textColor: #343a40;
 $boxShadowColor: #e9ecef;
 
-.signup-dialog {
-    background-color: $cardColor;
-    margin-top: 0px;
-    box-shadow: none;
-}
-
-.signup-dialog-title {
-    color: $textColor;
-}
-
-.signup-dialog-content {
-    color: $textColor;
-}
-
-::ng-deep .signup-custom>mat-dialog-container {
-    background-color: $cardColor;
-}
-
-.signup-actions {
-    display: flex
-}
