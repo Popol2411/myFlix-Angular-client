@@ -11,10 +11,12 @@ $boxShadowColor: #e9ecef;
 
 .genre-dialog-title {
     color: $textColor;
+    text-align: center;
 }
 
 .genre-dialog-content {
     color: $textColor;
+    text-align: justify;
 }
 
 ::ng-deep .genre-custom>mat-dialog-container {

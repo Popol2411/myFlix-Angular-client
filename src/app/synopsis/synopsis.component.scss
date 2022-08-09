@@ -11,10 +11,12 @@ $boxShadowColor: #e9ecef;
 
 .synopsis-dialog-title {
     color: $textColor;
+    text-align: center;
 }
 
 .synopsis-dialog-content {
     color: $textColor;
+    text-align: justify;
 }
 
 ::ng-deep .synopsis-custom>mat-dialog-container {

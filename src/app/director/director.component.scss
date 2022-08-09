@@ -11,10 +11,12 @@ $boxShadowColor: #e9ecef;
 
 .director-dialog-title {
     color: $textColor;
+    text-align: center;
 }
 
 .director-dialog-content {
     color: $textColor;
+    text-align: justify;
 }
 
 ::ng-deep .director-custom>mat-dialog-container {
