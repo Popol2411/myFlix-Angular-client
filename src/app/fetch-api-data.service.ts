@@ -201,7 +201,7 @@ export class FetchApiDataService {
    */
   editUser(updateDetails: any): Observable<any> {
     return this.http
-      .put(apiUrl + `users/${username}`,  {
+      .put(apiUrl + `users/${username}`, {
         updateDetails,
         headers: new HttpHeaders({
           Authorization: 'Bearer ' + token,
