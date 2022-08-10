@@ -1,41 +1,121 @@
-$backgroundColor: #f8f9fa;
-$cardColor: #fff;
-$textColor: #343a40;
-$boxShadowColor: #e9ecef;
-
-.user-profile-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 40px;
-    background-color: $backgroundColor;
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: black;
 }
-
 
 .user-profile-card {
-    margin-top: 50px;
-    display: flex;
-    padding: 30px;
-    flex-direction: column;
-    box-shadow: 10px 5px 5px $boxShadowColor;
-    background-color: $cardColor;
+  display: flex;
+  padding: 30px;
+  width: 400px;
+  flex-direction: column;
 }
 
-.user-profile-card-header {
-    margin-bottom: 20px;
-    color: $textColor;
-    display: flex;
-    justify-content: center;
-}
+.user-profile-card > mat-card-header {
+  display: flex;
+  justify-content: center;
+} 
 
-
-.user-profile-card-content {
-    color: $textColor;
+.divider {
+  border: inset;
+  margin-bottom: 20px;
 }
 
 .mat-card>.mat-card-actions:last-child {
-    margin-bottom: -8px;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: space-evenly;
+  margin-bottom: -8px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.edit-profile-button {
+  background-color: #0045A1;
+  color: white;
+}
+
+.delete-profile-button {
+  background-color: #CE2A38;
+  color: white;
+  margin: 0 !important;
+}
+
+.favorite-movies-header {
+  color: white;
+  margin-top: 25px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.favorite-movies-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite-movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color:white;
+  max-width: 280px;
+  width: 280px;
+  margin: 15px;
+  padding: 20px 3px;
+}
+
+.favorite-movies-title-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.favorite-movies-title {
+  display: flex;
+  max-width: 210px;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+}
+
+.mat-card-subtitle {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.director-button {
+  padding: 5px;
+  margin: 0;
+  line-height: 0;
+  max-height: 20px;
+}
+
+img {
+  width: 250px;
+  height: 350px;
+  object-fit: contain;
+}
+
+.mat-icon-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.genre-button {
+  background-color: #0045A1;
+}
+
+.synopsis-button {
+  background-color: #CE2A38;
 }
