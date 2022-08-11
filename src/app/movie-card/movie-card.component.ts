@@ -83,7 +83,6 @@ export class MovieCardComponent implements OnInit {
   * opens the user director dialog from DirectorComponent to displaying details
   * @param name
   * @param bio
-  * @param birthday
   */
   openDirectorDialog(name: string, bio: string): void {
     this.dialog.open(DirectorComponent, {
