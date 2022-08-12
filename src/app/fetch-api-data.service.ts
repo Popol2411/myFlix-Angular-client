@@ -13,6 +13,7 @@ const token = localStorage.getItem('token');
 // Get Username stored in local storage
 const username = localStorage.getItem('user');
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -20,13 +21,11 @@ export class FetchApiDataService {
   // Inject HttpClient module to constructor params
   constructor(private http: HttpClient) { }
 
- 
- /**
- * Making the api call for the user registration endpoint
- * @param userDetails {any}
- * @returns a new user object
- */
-
+  /**
+   * calls API endpoint to register a new user
+   * @param userDetails 
+   * @returns a new user object in JSON format
+   */
   public userRegistration(userDetails: any): Observable<any> {
     console.log(userDetails);
     return this.http
@@ -37,11 +36,10 @@ export class FetchApiDataService {
   }
 
   /**
- * calls API endpoint to user login
- * @param userDetails {any}
- * @returns a new user object
- */
-
+   * calls API endpoint to login an existing user
+   * @param userDetails 
+   * @returns data of the user in JSON format
+   */
   public userLogin(userDetails: any): Observable<any> {
     return this.http
       .post(apiUrl + 'login', userDetails)
@@ -49,6 +47,7 @@ export class FetchApiDataService {
         catchError(this.handleError)
       );
   }
+
 
   /**
    * calls API endpoint to get data on all movies
