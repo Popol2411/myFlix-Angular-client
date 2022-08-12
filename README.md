@@ -95,4 +95,4 @@ Run the app
 ng serve
 ```
 
-## :rocket: <a href="https://myflix-popol2411.netlify.app/">Live Demo</a> 
+## :rocket: <a href="https://popol2411.github.io/myFlix-Angular-client/welcome">Live Demo</a> 
