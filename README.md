@@ -84,17 +84,15 @@ myFlix Angular Client is the frontend-side of a movies web application. The appl
 
 Download the repository on your machine 
 ```
-https://github.com/Popol2411/myFlix-client.git
+https://github.com/Popol2411/myFlix-Angular-client.git
 ```
 Install dependencies
 ```
 npm install
 ```
-Build the app
+Run the app
 ```
-parcel src/index.html
+ng serve
 ```
-
-#### Build with [Parcel](https://parceljs.org/) :package:
 
 ## :rocket: <a href="https://myflix-popol2411.netlify.app/">Live Demo</a> 
