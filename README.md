@@ -1,27 +1,100 @@
-# MyFlixAngularClient
+# :seedling: myFlix Angular Client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+myFlix Angular Client is the frontend-side of a movies web application. The application provides users with access to information about different movies, their directors and the movie genre. Users are able to sign up, update their personal information, create a list of their favorite movies and remove movies from their favorite list. The application is written in Angular.
 
-## Development server
+## :speech_balloon: User Stories
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- As a user, I want to be able to receive information on movies, directors, and genres so that I can learn more about movies I’ve watched or am interested in.  
 
-## Code scaffolding
+- As a user, I want to be able to create a profile so I can save data about my favorite movies.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :key: Key Features 
 
-## Build
+### Main View
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Returns a list of ALL movies to the user (each listed item with an image, title and description)
 
-## Running unit tests
+- Sorting and filtering
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Ability to select a movie for more details
 
-## Running end-to-end tests
+### Single movie view
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Returns data (description, genre, director, image) about a single movie to the user
 
-## Further help
+- Allows users to add a movie to their list of favorites
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Login view
+
+- Allows users to log in with a username and password
+
+- Registration view
+
+- Allows new users to register (username, password, email, birthday)
+
+### Genre view
+
+- Returns data about a genre, with a name and description
+
+### Director view
+
+- Returns data about a director (name, bio)
+
+### Profile view
+
+- Allows users to update their user info (username, password, email, date of birth)
+
+- Allows existing users to unregister
+
+- Displays favorite movies
+
+- Allows users to remove a movie from their list of favorites
+
+## :hammer_and_wrench: Built With 
+
+- HTML
+
+- CSS
+
+- [TypeScript](https://www.typescriptlang.org/)
+
+- [Angular](https://angular.io/)
+
+- [Angular Material](https://material.angular.io/)
+
+- [TypeDoc](https://typedoc.org/)
+
+## :page_with_curl: Technical Requirements
+
+- The application must be written in Angular. (version 9 or later)
+
+- The application requires the latest version of Node.js and npm package.
+
+- The application must contain user registration and login forms.
+
+- The application must be designed using Angular Material.
+
+- The application's codebase must contain comments using Typedoc.
+
+- The project must contain technical documentation using JSDoc.
+
+- The project must be hosted on GitHub Pages
+
+## :man_technologist: Get Started
+
+Download the repository on your machine 
+```
+https://github.com/Popol2411/myFlix-client.git
+```
+Install dependencies
+```
+npm install
+```
+Build the app
+```
+parcel src/index.html
+```
+
+#### Build with [Parcel](https://parceljs.org/) :package:
+
+## :rocket: <a href="https://myflix-popol2411.netlify.app/">Live Demo</a> 
