@@ -13,24 +13,20 @@
             <p><b>Birthday:</b> {{user.Birthday | date }}</p>
         </mat-card-content>
 
-<!-- Edit Profile & Delete Profile -->
-<mat-card-actions class="user-profile-actions">
-  <button
-    mat-raised-button
-    color="primary"
-    (click)="openEditProfileDialog()"
-  >
-    <mat-icon>edit</mat-icon>
-    Edit Profile
-  </button>
-  <button
-    mat-raised-button
-    color="warn"
-    (click)="deleteProfile()"
-  >
-    <mat-icon>delete_forever</mat-icon>
-    Delete Profile !!!
-  </button>
-</mat-card-actions>
-</mat-card>
+        <!-- Edit Profile Information & Delete Profile -->
+        <mat-card-actions class="user-profile-actions">
+
+            <button mat-raised-button (click)="openEditProfileDialog()" color="primary">
+                <mat-icon>edit</mat-icon>
+                Edit Profile
+            </button>
+            <button mat-raised-button (click)="deleteProfile()" color="warn">
+                <mat-icon>delete_forever</mat-icon>
+                Delete Profile
+            </button>
+
+        </mat-card-actions>
+    </mat-card>
+
+    <!-- Display Favorite Movies -->
 </div>
