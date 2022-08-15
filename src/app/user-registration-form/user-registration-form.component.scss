@@ -3,6 +3,13 @@ $cardColor: #fff;
 $textColor: #343a40;
 $boxShadowColor: #e9ecef;
 
+.mat-card-actions {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .signup-dialog {
     background-color: $cardColor;
     margin-top: 0px;
