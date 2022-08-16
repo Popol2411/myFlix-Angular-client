@@ -57,7 +57,7 @@ export class MovieCardComponent implements OnInit {
   /**
    * checks if a movie is included in the user's list of favorite movies
    * @param id 
-   * @returns true, if the movie is a favorite move, else false
+   * @returns true, if the movie is a favorite movie, else false
    */
   isFav(id: string): boolean {
     return this.favoriteMovies.includes(id)
