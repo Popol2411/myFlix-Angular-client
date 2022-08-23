@@ -156,7 +156,7 @@ apiUrl = 'https://myflixdbpopol.herokuapp.com/';
    * @param movieID 
    * @returns JSON object holding data about the updated user
    */
-  addFavoriteMovie(movieID: string): Observable<any> {
+  addFavoriteMovie(movieID: any): Observable<any> {
     console.log('test token', this.getUserToken())
     return this.http
       .post(this.apiUrl + `users/${this.getUserName()}/movies/${movieID}`, {}, 
