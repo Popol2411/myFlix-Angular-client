@@ -59,8 +59,12 @@ export class MovieCardComponent implements OnInit {
    * @param id 
    * @returns true, if the movie is a favorite movie, else false
    */
-  isFav(id: string): boolean {
-    return this.favoriteMovies.includes(id)
+   isFav(id: any): boolean {
+    if (this.favoriteMovies.includes(id)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -118,7 +122,7 @@ export class MovieCardComponent implements OnInit {
    * @param id 
    * @function addFavoriteMovie
    */
-  addToFavoriteMovies(id: string): void {
+  addToFavoriteMovies(id: any): void {
     console.log(id);
     this.fetchApiData.addFavoriteMovie(id).subscribe((result) => {
       console.log(result);
@@ -131,7 +135,7 @@ export class MovieCardComponent implements OnInit {
    * @param id 
    * @function removeFavoriteMovie
    */
-  removeFromFavoriteMovies(id: string): void {
+  removeFromFavoriteMovies(id: any): void {
     console.log(id);
     this.fetchApiData.removeFavoriteMovie(id).subscribe((result) => {
       console.log(result);
